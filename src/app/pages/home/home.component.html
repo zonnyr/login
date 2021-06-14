@@ -1,0 +1,35 @@
+<div ng-init="onInit()">
+    
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-more" style="background-image: url('../../../assets/images/perfil.jpg');"></div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-34">
+						Profile
+					</span>
+                    
+					
+					<div class="container-login100-form-btn m-b-20 d-block">
+                        Nombre: {{user.name}}
+					</div>
+					<div class="container-login100-form-btn m-b-20 d-block">
+                        Apellido: {{user.lastName}}
+					</div>
+					<div class="container-login100-form-btn m-b-20 d-block">
+                        Email: {{user.email}}
+					</div>
+					
+					<div class="container-login100-form-btn">
+                        <!--  -->
+                        <button class="login100-form-btn" type="submit" (click)="logout()" >Log out</button>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+</div>
